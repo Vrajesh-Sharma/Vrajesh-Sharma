@@ -20,7 +20,7 @@ const projectsData: Project[] = [
     description: "A language detection web app built using Flask and machine learning to identify languages.",
     longDescription: "SarvaBhasha is a web app that identifies languages from user-input text with 94.90% classification accuracy across 22 languages. It combines NLP techniques and machine learning models with a clean, dark-themed interface for user-friendly interaction.",
     technologies: ["Python", "Flask", "ML", "NLP"],
-    image: "https://raw.githubusercontent.com/Vrajesh-Sharma/VrajeshSharma/refs/heads/main/src/assets/SarvaBhasha.jpeg",
+    image: "public/images/SarvaBhasha.jpeg",
     githubUrl: "https://github.com/vrajesh-sharma/SarvaBhasha",
     liveUrl: "https://sarvabhasha.onrender.com/",
     featured: true,
