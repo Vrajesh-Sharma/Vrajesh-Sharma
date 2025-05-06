@@ -14,7 +14,7 @@ export interface BlogPost {
 
 const blogData: BlogPost[] = [
   {
-    id: "blog-5",
+    id: "blog-1",
     title: "Getting Started with Git: Essential Commands for Beginners",
     excerpt: "Learn the fundamental Git commands that every developer should know to effectively manage version control.",
     content: `
@@ -160,13 +160,13 @@ Happy coding!
     date: "15-1-2024",
     category: "Development",
     tags: ["Git", "Version Control", "Programming", "Tutorial"],
-    image: "https://images.unsplash.com/photo-1618401471353-b98afee0b2eb?q=80&w=3888&auto=format&fit=crop",
+    image: "images/Git&Github.png",
     featured: true,
     readTime: 8
   },
   
   {
-    id: "blog-1",
+    id: "blog-2",
     title: "Understanding Agentic AI: From Tools to Intelligent Agents",
     excerpt: "Explore how Agentic AI represents a shift from passive tools to autonomous, goal-driven agents capable of complex reasoning and decision-making.",
     content: `
@@ -262,204 +262,9 @@ Happy coding!
     date: "10-3-2025",
     category: "AI/ML",
     tags: ["Agentic AI", "LLMs", "LangChain", "AutoGPT", "AI Agents"],
-    image: "https://images.unsplash.com/photo-1631175294825-d0fccc9f87a5?q=80&w=2832&auto=format&fit=crop",
-    featured: true,
+    image: "images/AgenticAI.png",
+    featured: false,
     readTime: 7
-  },
-  
-  
-  {
-    id: "blog-2",
-    title: "State Management Patterns in React",
-    excerpt: "An exploration of different state management approaches in React applications.",
-    content: `
-# State Management Patterns in React
-
-Managing state effectively is one of the most challenging aspects of building React applications. In this article, we'll compare different state management patterns and when to use them.
-
-## Local Component State
-
-React's \`useState\` hook is perfect for component-specific state that doesn't need to be shared. It's simple and requires minimal boilerplate.
-
-\`\`\`jsx
-function Counter() {
-  const [count, setCount] = useState(0);
-  return (
-    <button onClick={() => setCount(count + 1)}>
-      Count: {count}
-    </button>
-  );
-}
-\`\`\`
-
-## Context API for Shared State
-
-When multiple components need access to the same state, the Context API provides a way to share state without prop drilling.
-
-\`\`\`jsx
-const ThemeContext = React.createContext('light');
-
-function App() {
-  const [theme, setTheme] = useState('light');
-  return (
-    <ThemeContext.Provider value={theme}>
-      <ThemedButton onClick={() => setTheme('dark')} />
-    </ThemeContext.Provider>
-  );
-}
-\`\`\`
-
-## External State Management Libraries
-
-For complex applications, libraries like Redux, MobX, or Zustand can provide more structured state management with features like time-travel debugging and middleware.
-
-## The Future: React Query and Server State
-
-Modern applications often deal with server state. Libraries like React Query and SWR help manage this specialized form of state with features like caching, refetching, and optimistic updates.
-
-Choose the right state management pattern based on your application's needs rather than following trends. The simplest solution that meets your requirements is often the best choice.
-    `,
-    author: "John Doe",
-    date: "2023-11-20",
-    category: "React",
-    tags: ["React", "JavaScript", "State Management", "Frontend"],
-    image: "https://images.unsplash.com/photo-1633356122544-f134324a6cee?q=80&w=3870&auto=format&fit=crop",
-    featured: true,
-    readTime: 8
-  },
-  {
-    id: "blog-3",
-    title: "Demystifying TypeScript Generics",
-    excerpt: "A deep dive into TypeScript generics and how they can make your code more flexible and type-safe.",
-    content: `
-# Demystifying TypeScript Generics
-
-TypeScript generics might seem intimidating at first, but they're one of the most powerful features for creating flexible, reusable, and type-safe code. Let's explore how generics work and when to use them.
-
-## What Are Generics?
-
-Generics allow you to create reusable components that can work with a variety of types rather than a single one. They act as type variables that allow you to capture the type provided by the user.
-
-## Basic Generic Functions
-
-\`\`\`typescript
-function identity<T>(arg: T): T {
-  return arg;
-}
-
-// Usage
-const num = identity<number>(5); // Type of num is number
-const str = identity("hello");   // Type inference: Type of str is string
-\`\`\`
-
-## Generic Interfaces and Classes
-
-\`\`\`typescript
-interface Box<T> {
-  contents: T;
-}
-
-const box: Box<string> = { contents: "hello" };
-\`\`\`
-
-## Constraints on Generics
-
-Sometimes you want to restrict the types that can be used with your generic. You can do this with the \`extends\` keyword.
-
-\`\`\`typescript
-function getProperty<T, K extends keyof T>(obj: T, key: K): T[K] {
-  return obj[key];
-}
-\`\`\`
-
-## Real-World Use Cases
-
-Generics are particularly useful for:
-- Creating reusable components
-- Building type-safe collections
-- Writing utilities that work with different data types
-- Implementing patterns like factories or repositories
-
-By mastering generics, you'll be able to write more elegant, flexible, and maintainable TypeScript code.
-    `,
-    author: "John Doe",
-    date: "2023-10-05",
-    category: "TypeScript",
-    tags: ["TypeScript", "JavaScript", "Programming", "Web Development"],
-    image: "https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=3870&auto=format&fit=crop",
-    featured: false,
-    readTime: 10
-  },
-  {
-    id: "blog-4",
-    title: "Designing Effective Component APIs",
-    excerpt: "Learn how to design component APIs that are intuitive, flexible, and maintainable.",
-    content: `
-# Designing Effective Component APIs
-
-The way you design your component APIs can significantly impact how easy they are to use, maintain, and extend. In this article, we'll explore principles and patterns for creating effective component interfaces.
-
-## The Principle of Least Surprise
-
-Components should behave predictably and match users' expectations. Follow platform conventions and common patterns to reduce the learning curve.
-
-## Props Design
-
-### Boolean Props
-
-When designing boolean props, use positive naming to make the intent clear:
-
-\`\`\`jsx
-// Good
-<Button disabled={true} />
-
-// Avoid
-<Button enabled={false} />
-\`\`\`
-
-### Callback Naming
-
-For event callbacks, use the 'on' prefix followed by the event name:
-
-\`\`\`jsx
-<Button onClick={handleClick} onHover={handleHover} />
-\`\`\`
-
-### Default Props
-
-Provide sensible defaults to make components easy to use out of the box.
-
-## Component Composition
-
-Rather than creating complex props APIs, lean on React's composition model:
-
-\`\`\`jsx
-// Instead of
-<Card title="Hello" content="World" footer={<Button>Click me</Button>} />
-
-// Consider
-<Card>
-  <CardTitle>Hello</CardTitle>
-  <CardContent>World</CardContent>
-  <CardFooter>
-    <Button>Click me</Button>
-  </CardFooter>
-</Card>
-\`\`\`
-
-## Controlled vs. Uncontrolled Components
-
-Decide whether a component should be controlled (state managed by parent) or uncontrolled (internal state) based on its use cases.
-
-By following these principles, you'll create component APIs that are a joy to use and extend.
-    `,
-    author: "John Doe",
-    date: "2023-09-12",
-    category: "Design",
-    tags: ["React", "Component Design", "API Design", "User Experience"],
-    image: "https://images.unsplash.com/photo-1565106430482-8f6e74349ca1?q=80&w=3870&auto=format&fit=crop",
-    featured: false,
-    readTime: 6
   }
 ];
 
