@@ -1,0 +1,162 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 240 10% 3.9%;
+    --foreground: 0 0% 98%;
+    
+    --card: 240 10% 3.9%;
+    --card-foreground: 0 0% 98%;
+    
+    --popover: 240 10% 3.9%;
+    --popover-foreground: 0 0% 98%;
+    
+    --primary: 0 0% 98%;
+    --primary-foreground: 240 5.9% 10%;
+    
+    --secondary: 240 3.7% 15.9%;
+    --secondary-foreground: 0 0% 98%;
+    
+    --muted: 240 3.7% 15.9%;
+    --muted-foreground: 240 5% 64.9%;
+    
+    --accent: 265 89% 78%;
+    --accent-foreground: 0 0% 98%;
+    
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+    
+    --border: 240 3.7% 15.9%;
+    --input: 240 3.7% 15.9%;
+    --ring: 240 4.9% 83.9%;
+    
+    --radius: 0.75rem;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border selection:bg-flux-purple/30 selection:text-white;
+  }
+  
+  body {
+    @apply bg-background text-foreground antialiased;
+    font-feature-settings: "ss01", "ss02", "cv01", "cv02", "cv03";
+  }
+
+  html {
+    @apply scroll-smooth;
+  }
+}
+
+@layer utilities {
+  .scrollbar-none {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  
+  .scrollbar-none::-webkit-scrollbar {
+    display: none;
+  }
+
+  .glass-morphism {
+    @apply backdrop-blur-xl bg-white/5 border border-white/10 shadow-[0_4px_12px_-2px_rgba(0,0,0,0.3)] hover:shadow-[0_8px_20px_-4px_rgba(121,40,202,0.2)] transition-all duration-300;
+  }
+  
+  .glass-card {
+    @apply backdrop-blur-xl bg-white/10 border border-white/20 shadow-[0_10px_30px_rgba(0,0,0,0.25)] hover:shadow-[0_15px_30px_rgba(121,40,202,0.2)] transition-all duration-300;
+  }
+  
+  .neo-blur {
+    @apply backdrop-blur-2xl bg-black/40 border border-white/10 shadow-[0_10px_30px_rgba(0,0,0,0.3)];
+  }
+  
+  .text-gradient {
+    @apply bg-gradient-to-br from-white via-white/90 to-white/70 bg-clip-text text-transparent;
+  }
+  
+  .text-gradient-flux {
+    @apply bg-gradient-to-r from-flux-purple to-flux-cyan bg-clip-text text-transparent;
+  }
+
+  .flux-glow {
+    text-shadow: 0 0 10px rgba(121, 40, 202, 0.5), 0 0 20px rgba(121, 40, 202, 0.3), 0 0 30px rgba(121, 40, 202, 0.1);
+  }
+
+  .text-shadow {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  }
+  
+  .glow-border {
+    box-shadow: 0 0 15px rgba(121, 40, 202, 0.3);
+    border: 1px solid rgba(121, 40, 202, 0.3);
+  }
+}
+
+/* Flux background animations */
+@keyframes moveVertical {
+  0% {
+    transform: translateY(-50%) translateX(-50%);
+  }
+  50% {
+    transform: translateY(50%) translateX(-50%);
+  }
+  100% {
+    transform: translateY(-50%) translateX(-50%);
+  }
+}
+
+@keyframes moveHorizontal {
+  0% {
+    transform: translateX(-50%) translateY(-50%);
+  }
+  50% {
+    transform: translateX(50%) translateY(-50%);
+  }
+  100% {
+    transform: translateX(-50%) translateY(-50%);
+  }
+}
+
+@keyframes moveInCircle {
+  0% {
+    transform: rotate(0deg) translate(100px) rotate(0deg) translateY(-50%) translateX(-50%);
+  }
+  50% {
+    transform: rotate(180deg) translate(100px) rotate(-180deg) translateY(-50%) translateX(-50%);
+  }
+  100% {
+    transform: rotate(360deg) translate(100px) rotate(-360deg) translateY(-50%) translateX(-50%);
+  }
+}
+
+/* Custom text highlight effect */
+::selection {
+  background: rgba(121, 40, 202, 0.3);
+  color: white;
+}
+
+/* Animations for social icons */
+.social-icon {
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.social-icon:hover {
+  transform: translateY(-3px);
+  color: rgba(121, 40, 202, 1);
+}
+
+/* Profile picture styles */
+.profile-picture {
+  border-radius: 50%;
+  border: 3px solid rgba(121, 40, 202, 0.5);
+  box-shadow: 0 0 20px rgba(121, 40, 202, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.profile-picture:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 30px rgba(121, 40, 202, 0.5);
+}
