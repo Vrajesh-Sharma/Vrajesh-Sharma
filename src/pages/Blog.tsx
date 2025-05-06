@@ -138,29 +138,19 @@ const Blog = () => {
           </div>
         </section>
         
-        {/* Newsletter */}
+        {/* Collaboration CTA */}
         <section className="py-20 px-4 bg-gradient-radial from-slate-900/50 to-background">
           <div className="max-w-4xl mx-auto text-center">
-            <h2 className="text-2xl md:text-3xl font-bold mb-4">Subscribe to My Newsletter</h2>
+            <h2 className="text-2xl md:text-3xl font-bold mb-4">Interested in Collaboration?</h2>
             <p className="text-gray-300 mb-8 max-w-2xl mx-auto">
-              Get the latest articles and updates delivered straight to your inbox.
+              I'm always looking for interesting projects to work on. If you have an idea or a project in mind, I'd love to hear about it.
             </p>
-            
-            <form className="max-w-md mx-auto">
-              <div className="flex">
-                <input 
-                  type="email" 
-                  placeholder="Your email address" 
-                  className="flex-1 px-4 py-3 rounded-l-full bg-white/5 border border-white/10 text-white focus:outline-none focus:ring-2 focus:ring-accent"
-                />
-                <button 
-                  type="submit"
-                  className="px-6 py-3 rounded-r-full bg-accent text-white hover:bg-accent/80 transition-colors duration-300"
-                >
-                  Subscribe
-                </button>
-              </div>
-            </form>
+            <a 
+              href="/contact" 
+              className="inline-flex items-center justify-center px-8 py-3 font-medium glass-morphism rounded-full transition-all duration-300 hover:shadow-[0_0_30px_rgba(121,40,202,0.3)] hover:border-accent/50"
+            >
+              Let's Work Together
+            </a>
           </div>
         </section>
       </main>
