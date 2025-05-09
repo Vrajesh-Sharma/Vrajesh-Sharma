@@ -13,6 +13,7 @@ import Blog from "./pages/Blog";
 import Contact from "./pages/Contact";
 import NotFound from "./pages/NotFound";
 import PageTransition from "./components/PageTransition";
+import Chatbot from "./components/Chatbot";
 
 const queryClient = new QueryClient();
 
@@ -34,8 +35,8 @@ const App = () => (
               <Route path="/contact" element={<Contact />} />
               <Route path="*" element={<NotFound />} />
             </Routes>
-            
           </PageTransition>
+          <Chatbot />
         </div>
       </BrowserRouter>
     </TooltipProvider>
