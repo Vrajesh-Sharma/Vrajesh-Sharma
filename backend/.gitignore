@@ -1,3 +1,4 @@
 .env
 documents
 upload_local_docs.py
+delete_file.py
