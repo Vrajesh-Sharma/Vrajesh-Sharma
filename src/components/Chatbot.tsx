@@ -210,7 +210,7 @@ export default function Chatbot() {
                   Give me 5–10 seconds to impress you!
                 </p>
                 <p className="text-white text-sm px-6 py-3 glass-morphism rounded-lg animate-pulse">
-                  💸 P.S. I'm running on free plans so I'm a bit shy but totally worth it 😉
+                  💸 P.S - I'm running on free plans so I'm a bit shy but totally worth it 😉
                 </p>
               </div>
             )}
