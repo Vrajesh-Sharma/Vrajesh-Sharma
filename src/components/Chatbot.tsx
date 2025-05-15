@@ -207,7 +207,7 @@ export default function Chatbot() {
               <div className="flex flex-col justify-center items-center h-full space-y-3">
                 <p className="text-white text-sm px-6 py-3 glass-morphism rounded-lg animate-pulse">
                   🤖 First messages are like first dates... I get a little nervous and slow 😅<br />
-                  Give me 5–10 seconds to impress you!
+                  Give me 15-20 seconds to impress you!
                 </p>
                 <p className="text-white text-sm px-6 py-3 glass-morphism rounded-lg animate-pulse">
                   💸 P.S - I'm running on free plans so I'm a bit shy but totally worth it 😉
