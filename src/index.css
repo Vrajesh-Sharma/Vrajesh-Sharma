@@ -132,6 +132,29 @@
   }
 }
 
+/* Chatbot tooltip animation */
+@keyframes pulsate {
+  0% {
+    opacity: 0.7;
+    transform: scale(0.95);
+    box-shadow: 0 0 5px rgba(121, 40, 202, 0.3), 0 0 10px rgba(20, 184, 166, 0.2);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.05);
+    box-shadow: 0 0 15px rgba(121, 40, 202, 0.5), 0 0 20px rgba(20, 184, 166, 0.4);
+  }
+  100% {
+    opacity: 0.7;
+    transform: scale(0.95);
+    box-shadow: 0 0 5px rgba(121, 40, 202, 0.3), 0 0 10px rgba(20, 184, 166, 0.2);
+  }
+}
+
+.chatbot-tooltip {
+  animation: pulsate 2s infinite ease-in-out;
+}
+
 /* Custom text highlight effect */
 ::selection {
   background: rgba(121, 40, 202, 0.3);

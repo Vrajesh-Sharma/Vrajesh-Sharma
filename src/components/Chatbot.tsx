@@ -16,6 +16,9 @@ export default function Chatbot() {
   const [isLoading, setIsLoading] = useState(false);
   const messagesEndRef = useRef<HTMLDivElement>(null);
   const [isMobile, setIsMobile] = useState(false);
+  const [showTooltip, setShowTooltip] = useState(false);
+  const scrollTimerRef = useRef<NodeJS.Timeout | null>(null);
+  const [hasInteracted, setHasInteracted] = useState(false);
 
   // Check if the device is mobile
   useEffect(() => {
@@ -30,6 +33,55 @@ export default function Chatbot() {
       window.removeEventListener('resize', checkMobile);
     };
   }, []);
+
+  // Scroll detection and attention grabber
+  useEffect(() => {
+    if (isOpen || hasInteracted) return;
+    
+    // For development/testing only
+    if (process.env.NODE_ENV === 'development') {
+      // Initial show after 7 seconds without needing to scroll (for testing)
+      const initialTimer = setTimeout(() => {
+        if (!isOpen && !hasInteracted) {
+          setShowTooltip(true);
+        }
+      }, 7000); // 7 seconds for initial display
+      
+      return () => {
+        clearTimeout(initialTimer);
+      };
+    }
+    
+    // Regular scroll detection for production
+    const handleScroll = () => {
+      if (scrollTimerRef.current) {
+        clearTimeout(scrollTimerRef.current);
+      }
+
+      scrollTimerRef.current = setTimeout(() => {
+        if (!isOpen && !hasInteracted && !showTooltip) {
+          setShowTooltip(true);
+        }
+      }, 10000); // 10 seconds
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+      if (scrollTimerRef.current) {
+        clearTimeout(scrollTimerRef.current);
+      }
+    };
+  }, [isOpen, hasInteracted, showTooltip]);
+
+  // Mark as interacted when chat opens
+  useEffect(() => {
+    if (isOpen) {
+      setHasInteracted(true);
+      setShowTooltip(false);
+    }
+  }, [isOpen]);
 
   const scrollToBottom = () => {
     messagesEndRef.current?.scrollIntoView({ behavior: 'smooth' });
@@ -97,13 +149,27 @@ export default function Chatbot() {
   return (
     <>
       {/* Floating Button - adjusted for mobile */}
-      <button
-        onClick={() => setIsOpen(true)}
-        className={`fixed ${isMobile ? 'bottom-4 right-4' : 'bottom-6 right-6'} p-4 glass-morphism rounded-full hover:glow-border transition-all duration-300 z-50 group`}
-        aria-label="Open chat"
-      >
-        <MessageCircle size={isMobile ? 20 : 24} className="text-flux-purple group-hover:text-flux-cyan transition-colors duration-300" />
-      </button>
+      <div className="relative">
+        <button
+          onClick={() => setIsOpen(true)}
+          className={`fixed ${isMobile ? 'bottom-4 right-4' : 'bottom-6 right-6'} p-4 glass-morphism rounded-full hover:glow-border transition-all duration-300 z-50 group`}
+          aria-label="Open chat"
+        >
+          <MessageCircle size={isMobile ? 20 : 24} className="text-flux-purple group-hover:text-flux-cyan transition-colors duration-300" />
+        </button>
+        
+        {/* Notification Tooltip */}
+        {showTooltip && (
+          <div className="fixed z-50 bg-gradient-to-r from-flux-purple to-flux-cyan rounded-lg px-4 py-2 text-white font-medium text-sm chatbot-tooltip shadow-lg"
+            style={{ 
+              bottom: isMobile ? '5rem' : '7rem', 
+              right: isMobile ? '1rem' : '1.5rem'
+            }}
+          >
+            Chat with me
+          </div>
+        )}
+      </div>
 
       {/* Chat Interface */}
       {isOpen && (
@@ -138,9 +204,13 @@ export default function Chatbot() {
           {/* Messages - adjusted padding for mobile */}
           <div className={`flex-1 overflow-y-auto ${isMobile ? 'p-3' : 'p-4'} space-y-4 scrollbar-none`}>
             {messages.length === 0 && (
-              <div className="flex justify-center items-center h-full">
-                <p className="text-white text-sm px-6 py-4 glass-morphism rounded-lg animate-pulse">
-                  Send a message to start chatting with Vrajesh
+              <div className="flex flex-col justify-center items-center h-full space-y-3">
+                <p className="text-white text-sm px-6 py-3 glass-morphism rounded-lg animate-pulse">
+                  🤖 First messages are like first dates... I get a little nervous and slow 😅<br />
+                  Give me 5–10 seconds to impress you!
+                </p>
+                <p className="text-white text-sm px-6 py-3 glass-morphism rounded-lg animate-pulse">
+                  💸 P.S. I'm running on free plans so I'm a bit shy but totally worth it 😉
                 </p>
               </div>
             )}
