@@ -11,6 +11,9 @@ import logging
 import sys
 from datetime import datetime
 import time
+import smtplib
+from email.mime.text import MIMEText
+from email.mime.multipart import MIMEMultipart
 
 # Configure logging to console only
 logging.basicConfig(
@@ -61,6 +64,12 @@ class ChatRequest(BaseModel):
 
 class ChatResponse(BaseModel):
     response: str
+
+class ContactRequest(BaseModel):
+    name: str
+    email: str
+    subject: str
+    message: str
 
 def create_embeddings(text: str) -> List[float]:
     """Create embeddings using Google's Gemini model."""
@@ -278,6 +287,104 @@ def chat():
 def health_check():
     """Health check endpoint."""
     return jsonify({"status": "healthy"})
+
+def send_contact_email(name: str, email: str, subject: str, message: str) -> bool:
+    """Send a contact form email using Gmail SMTP."""
+    try:
+        sender_email = os.getenv('EMAIL_ADDRESS')
+        with open('.env', 'r') as f:
+            env_content = f.read()
+            for line in env_content.split('\n'):
+                if line.startswith('EMAIL_PASSWORD='):
+                    sender_password = line.split('=', 1)[1].strip()
+                    break
+            else:
+                sender_password = None
+        receiver_email = os.getenv('RECEIVER_EMAIL')
+        
+        if not all([sender_email, sender_password, receiver_email]):
+            missing = []
+            if not sender_email: missing.append('EMAIL_ADDRESS')
+            if not sender_password: missing.append('EMAIL_PASSWORD')
+            if not receiver_email: missing.append('RECEIVER_EMAIL')
+            logger.error(f"Missing environment variables: {', '.join(missing)}")
+            return False
+            
+        msg = MIMEMultipart()
+        msg['From'] = sender_email
+        msg['To'] = receiver_email
+        msg['Subject'] = f"Portfolio Website: {subject}"
+        msg['Reply-To'] = email
+        
+        body = f"""Name: {name}
+Email: {email}
+Subject: {subject}
+Message:
+{message}"""
+        
+        msg.attach(MIMEText(body, 'plain'))
+        
+        try:
+            logger.info(f"Attempting to send email from sender_email to receiver_email")
+            server = smtplib.SMTP('smtp.gmail.com', 587)
+            server.starttls()
+            server.login(sender_email, sender_password.strip())
+            server.send_message(msg)
+            server.quit()
+            logger.info(f"Email sent successfully to receiver_email")
+            return True
+            
+        except smtplib.SMTPAuthenticationError as e:
+            logger.error(f"SMTP Authentication failed: {str(e)}")
+            return False
+        except smtplib.SMTPException as e:
+            logger.error(f"SMTP Error occurred: {str(e)}")
+            return False
+        
+    except Exception as e:
+        logger.error(f"Failed to send email: {str(e)}")
+        return False
+
+@app.route('/contact', methods=['POST'])
+def contact():
+    """Contact form endpoint."""
+    try:
+        data = request.get_json()
+        
+        required_fields = ['name', 'email', 'subject', 'message']
+        if not all(field in data for field in required_fields):
+            logger.warning(f"Missing required fields in contact form: {[f for f in required_fields if f not in data]}")
+            return jsonify({
+                "error": "Missing required fields",
+                "required": required_fields
+            }), 400
+            
+        success = send_contact_email(
+            name=data['name'],
+            email=data['email'],
+            subject=data['subject'],
+            message=data['message']
+        )
+        
+        if success:
+            logger.info(f"Contact form submitted successfully from {data['email']}")
+            return jsonify({
+                "message": "Message sent successfully!",
+                "status": "success"
+            })
+        else:
+            logger.error(f"Failed to send contact form from {data['email']}")
+            return jsonify({
+                "error": "Failed to send message",
+                "status": "error"
+            }), 500
+            
+    except Exception as e:
+        logger.error(f"Contact form error: {str(e)}")
+        return jsonify({
+            "error": "Internal server error",
+            "status": "error"
+        }), 500
 
 def main():
     """Main function to run the application."""
