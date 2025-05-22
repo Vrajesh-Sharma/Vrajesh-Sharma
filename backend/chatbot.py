@@ -292,14 +292,7 @@ def send_contact_email(name: str, email: str, subject: str, message: str) -> boo
     """Send a contact form email using Gmail SMTP."""
     try:
         sender_email = os.getenv('EMAIL_ADDRESS')
-        with open('.env', 'r') as f:
-            env_content = f.read()
-            for line in env_content.split('\n'):
-                if line.startswith('EMAIL_PASSWORD='):
-                    sender_password = line.split('=', 1)[1].strip()
-                    break
-            else:
-                sender_password = None
+        sender_password = os.getenv('EMAIL_PASSWORD')
         receiver_email = os.getenv('RECEIVER_EMAIL')
         
         if not all([sender_email, sender_password, receiver_email]):
