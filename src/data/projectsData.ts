@@ -66,6 +66,18 @@ const projectsData: Project[] = [
     category: "Web Application",
     year: 2025
   },
+  {
+    id: "project-5",
+    title: "LearnFlow",
+    description: "Your personalized AI tutor that transforms videos and documents into interactive, gamified learning journeys.",
+    longDescription: "LearnFlow is an all-in-one AI-powered learning platform built during HackSpire 2025. It allows users to upload PDFs or paste YouTube links, and instantly transforms them into structured learning flows. Features include intelligent document parsing, adaptive quizzes, flashcards, and a conversational AI tutor that supports both text and voice input. Built with Gemini AI, Pinecone, LangChain, and enhanced with smooth UI/UX animations via Framer Motion, LearnFlow also offers a gamified experience with streaks and badges, persistent chat history, and step-by-step concept explanations — making learning engaging and personalized like never before.",
+    technologies: ["React", "Flask", "Python", "Gemini AI", "Pinecone", "MongoDB"],
+    image: "images/LearnFlow.png",
+    githubUrl: "https://github.com/Vrajesh-Sharma/LearnFlow",
+    featured: true,
+    category: "AI-powered Learning Tool",
+    year: 2025
+  },
 ];
 
 export default projectsData;
