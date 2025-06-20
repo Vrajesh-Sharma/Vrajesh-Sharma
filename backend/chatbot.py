@@ -378,6 +378,14 @@ def contact():
             "error": "Internal server error",
             "status": "error"
         }), 500
+    
+# Keep-alive endpoint for Render deployment
+@app.route('/keep-alive', methods=['GET'])
+def keep_alive():
+    try:
+        return jsonify({"status": "success", "message": "Server is alive."}), 200
+    except Exception as e:
+        return jsonify({"status": "error", "message": str(e)}), 500
 
 def main():
     """Main function to run the application."""
