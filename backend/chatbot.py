@@ -10,6 +10,7 @@ import json
 import logging
 import sys
 from datetime import datetime
+import pytz
 import time
 import smtplib
 from email.mime.text import MIMEText
@@ -386,6 +387,30 @@ def keep_alive():
         return jsonify({"status": "success", "message": "Server is alive."}), 200
     except Exception as e:
         return jsonify({"status": "error", "message": str(e)}), 500
+
+# Cold start endpoint for Render deployment at 5:20 AM
+@app.route('/cold-start', methods=['POST'])
+def cold_start():
+    try:
+        data = request.get_json()
+
+        if not data or data.get("query") != "Are you awake":
+            return jsonify({
+                "error": "Invalid query. Expected: 'Are you awake'."
+            }), 400
+
+        # Get current time in IST
+        ist = pytz.timezone('Asia/Kolkata')
+        now_ist = datetime.now(ist).strftime('%Y-%m-%d %H:%M:%S %Z')
+
+        return jsonify({
+            "message": f"I am awake at {now_ist}"
+        }), 200
+
+    except Exception as e:
+        return jsonify({
+            "error": f"Something went wrong: {str(e)}"
+        }), 500
 
 def main():
     """Main function to run the application."""
