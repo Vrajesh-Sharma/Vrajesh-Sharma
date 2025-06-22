@@ -6,3 +6,4 @@ python-dotenv==1.0.1
 pydantic==2.6.3
 requests==2.31.0 
 gunicorn==21.2.0
+pytz
