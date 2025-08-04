@@ -36,28 +36,25 @@ export const skillCategories: SkillCategory[] = [
 
 const skillsData: Skill[] = [
   //Programming
-  { name: "C", category: "Programming", proficiency: 90, color: "#61DAFB" },
-  { name: "C++", category: "Programming", proficiency: 85, color: "#3178C6" },
+  { name: "C", category: "Programming", proficiency: 85, color: "#61DAFB" },
+  { name: "C++", category: "Programming", proficiency: 75, color: "#3178C6" },
   { name: "Python", category: "Programming", proficiency: 90, color: "#000000" },
   { name: "Java", category: "Programming", proficiency: 70, color: "#38B2AC" },
 
   // Frontend
-  { name: "React", category: "Frontend", proficiency: 90, color: "#61DAFB" },
-  { name: "TypeScript", category: "Frontend", proficiency: 85, color: "#3178C6" },
-  { name: "Next.js", category: "Frontend", proficiency: 75, color: "#000000" },
-  { name: "Tailwind CSS", category: "Frontend", proficiency: 90, color: "#38B2AC" },
+  { name: "React", category: "Frontend", proficiency: 75, color: "#61DAFB" },
+  { name: "TypeScript", category: "Frontend", proficiency: 60, color: "#3178C6" },
+  { name: "Tailwind CSS", category: "Frontend", proficiency: 70, color: "#38B2AC" },
   
   // Backend
   { name: "Flask", category: "Backend", proficiency: 90, color: "#E10098" },
   { name: "FastAPI", category: "Backend", proficiency: 85, color: "#E10098" },
-  { name: "Node.js", category: "Backend", proficiency: 75, color: "#339933" },
-  { name: "Express", category: "Backend", proficiency: 70, color: "#000000" },
+  { name: "Node.js", category: "Backend", proficiency: 65, color: "#339933" },
   { name: "PostgreSQL", category: "Backend", proficiency: 75, color: "#336791" },
   { name: "MongoDB", category: "Backend", proficiency: 70, color: "#47A248" },
   
   // DevOps
-  { name: "Docker", category: "DevOps", proficiency: 75, color: "#2496ED" },
-  { name: "CI/CD", category: "DevOps", proficiency: 70, color: "#4078c0" },
+  { name: "Docker", category: "DevOps", proficiency: 65, color: "#2496ED" },
   
   // Other
   { name: "Git", category: "Other", proficiency: 85, color: "#F05032" }

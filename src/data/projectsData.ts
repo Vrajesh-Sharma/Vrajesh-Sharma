@@ -1,4 +1,3 @@
-
 export interface Project {
   id: string;
   title: string;
@@ -15,43 +14,42 @@ export interface Project {
 
 const projectsData: Project[] = [
   {
-    id: "project-1",
-    title: "SarvaBhasha",
-    description: "A language detection web app built using Flask and machine learning to identify languages.",
-    longDescription: "SarvaBhasha is a web app that identifies languages from user-input text with 94.90% classification accuracy across 22 languages. It combines NLP techniques and machine learning models with a clean, dark-themed interface for user-friendly interaction.",
-    technologies: ["Python", "Flask", "ML", "NLP"],
-    image: "images/SarvaBhasha.jpeg",
-    githubUrl: "https://github.com/vrajesh-sharma/SarvaBhasha",
-    liveUrl: "https://sarvabhasha.onrender.com/",
+    id: "project-7",
+    title: "Sarathi",
+    description: "An AI-powered career guidance platform that offers resume reviews, job insights, and personalized recommendations.",
+    longDescription: "Sarathi is an intelligent career assistant designed to guide students and professionals in making smarter career decisions. Built using React, Flask, and LLM APIs, it provides resume analysis, skill-based suggestions, and personalized job insights. With a sleek, user-friendly UI, Sarathi ensures accessible and reliable career support.",
+    technologies: ["React", "Flask", "LLM", "Python", "Tailwind CSS"],
+    image: "images/Sarathi.png",
+    githubUrl: "https://github.com/Vrajesh-Sharma/Sarathi",
+    liveUrl: "https://sarathi-krishna.vercel.app",
+    featured: false,
+    category: "AI Assistant",
+    year: 2025
+  },
+  {
+    id: "project-6",
+    title: "Chewzy",
+    description: "A transparent food discovery platform that connects users with real-rated cafes and restaurants.",
+    longDescription: "Chewzy is a food-tech platform that helps users discover cafes and restaurants based on genuine user ratings, reviews, and filters like 'trendy', 'newest', or 'highest rated'. Built with MERN stack, it enables restaurant owners to subscribe and showcase their business while promoting honest feedback and eliminating fake hype.",
+    technologies: ["React", "Flask", "Tailwind CSS", "Supabase", "N8N"],
+    image: "images/Chewzy.png",
+    githubUrl: "https://github.com/Vrajesh-Sharma/Chewzy",
+    liveUrl: "https://chewzy.vercel.app/",
     featured: true,
     category: "Web Application",
-    year: 2023
-  },
+    year: 2025
+  }, 
   {
-    id: "project-2",
-    title: "Bicep Curl Counter",
-    description: "A Flask-based web app using OpenCV and MediaPipe to count bicep curls.",
-    longDescription: "Bicep Curl Counter is a Flask-based web application that uses OpenCV and MediaPipe to track elbow angles and count bicep curls during workouts. It features real-time webcam input and allows users to reset the counter for multiple sets.",
-    technologies: ["Python", "Flask", "OpenCV"],
-    image: "images/BicepCurl.png",
-    githubUrl: "https://github.com/Vrajesh-Sharma/Bicep-Curl-Counter",
-    liveUrl: "",
-    featured: false,
-    category: "Computer Vision",
-    year: 2024
-  },
-  {
-    id: "project-3",
-    title: "Gift Assistant",
-    description: "An AI-powered chatbot that suggests personalized gifts based on user preferences.",
-    longDescription: "Gift Assistant is an intelligent chatbot built using Flask, NLP, and Gemini API to recommend gift ideas tailored to the user's preferences, occasion, and budget. It streamlines the gifting process with contextual and creative suggestions.",
-    technologies: ["Python", "Flask", "NLP", "Gemini API"],
-    image: "images/GiftAssistant.png",
-    githubUrl: "https://github.com/Vrajesh-Sharma/GiftGPT",
-    liveUrl: "",
-    featured: false,
-    category: "AI/ML",
-    year: 2024
+    id: "project-5",
+    title: "LearnFlow",
+    description: "Your personalized AI tutor that transforms videos and documents into interactive, gamified learning journeys.",
+    longDescription: "LearnFlow is an all-in-one AI-powered learning platform built during HackSpire 2025. It allows users to upload PDFs or paste YouTube links, and instantly transforms them into structured learning flows. Features include intelligent document parsing, adaptive quizzes, flashcards, and a conversational AI tutor that supports both text and voice input. Built with Gemini AI, Pinecone, LangChain, and enhanced with smooth UI/UX animations via Framer Motion, LearnFlow also offers a gamified experience with streaks and badges, persistent chat history, and step-by-step concept explanations — making learning engaging and personalized like never before.",
+    technologies: ["React", "Flask", "Python", "Gemini AI", "Pinecone", "MongoDB"],
+    image: "images/LearnFlow.png",
+    githubUrl: "https://github.com/Vrajesh-Sharma/LearnFlow",
+    featured: true,
+    category: "AI-powered Learning Tool",
+    year: 2025
   },
   {
     id: "project-4",
@@ -67,16 +65,43 @@ const projectsData: Project[] = [
     year: 2025
   },
   {
-    id: "project-5",
-    title: "LearnFlow",
-    description: "Your personalized AI tutor that transforms videos and documents into interactive, gamified learning journeys.",
-    longDescription: "LearnFlow is an all-in-one AI-powered learning platform built during HackSpire 2025. It allows users to upload PDFs or paste YouTube links, and instantly transforms them into structured learning flows. Features include intelligent document parsing, adaptive quizzes, flashcards, and a conversational AI tutor that supports both text and voice input. Built with Gemini AI, Pinecone, LangChain, and enhanced with smooth UI/UX animations via Framer Motion, LearnFlow also offers a gamified experience with streaks and badges, persistent chat history, and step-by-step concept explanations — making learning engaging and personalized like never before.",
-    technologies: ["React", "Flask", "Python", "Gemini AI", "Pinecone", "MongoDB"],
-    image: "images/LearnFlow.png",
-    githubUrl: "https://github.com/Vrajesh-Sharma/LearnFlow",
+    id: "project-3",
+    title: "Gift Assistant",
+    description: "An AI-powered chatbot that suggests personalized gifts based on user preferences.",
+    longDescription: "Gift Assistant is an intelligent chatbot built using Flask, NLP, and Gemini API to recommend gift ideas tailored to the user's preferences, occasion, and budget. It streamlines the gifting process with contextual and creative suggestions.",
+    technologies: ["Python", "Flask", "NLP", "Gemini API"],
+    image: "images/GiftAssistant.png",
+    githubUrl: "https://github.com/Vrajesh-Sharma/GiftGPT",
+    liveUrl: "",
+    featured: false,
+    category: "AI/ML",
+    year: 2024
+  },
+  {
+    id: "project-2",
+    title: "Bicep Curl Counter",
+    description: "A Flask-based web app using OpenCV and MediaPipe to count bicep curls.",
+    longDescription: "Bicep Curl Counter is a Flask-based web application that uses OpenCV and MediaPipe to track elbow angles and count bicep curls during workouts. It features real-time webcam input and allows users to reset the counter for multiple sets.",
+    technologies: ["Python", "Flask", "OpenCV"],
+    image: "images/BicepCurl.png",
+    githubUrl: "https://github.com/Vrajesh-Sharma/Bicep-Curl-Counter",
+    liveUrl: "",
+    featured: false,
+    category: "Computer Vision",
+    year: 2024
+  },
+  {
+    id: "project-1",
+    title: "SarvaBhasha",
+    description: "A language detection web app built using Flask and machine learning to identify languages.",
+    longDescription: "SarvaBhasha is a web app that identifies languages from user-input text with 94.90% classification accuracy across 22 languages. It combines NLP techniques and machine learning models with a clean, dark-themed interface for user-friendly interaction.",
+    technologies: ["Python", "Flask", "ML", "NLP"],
+    image: "images/SarvaBhasha.jpeg",
+    githubUrl: "https://github.com/vrajesh-sharma/SarvaBhasha",
+    liveUrl: "https://sarvabhasha.onrender.com/",
     featured: true,
-    category: "AI-powered Learning Tool",
-    year: 2025
+    category: "Web Application",
+    year: 2023
   },
 ];
 
