@@ -16,8 +16,8 @@ const projectsData: Project[] = [
   {
     id: "project-7",
     title: "Sarathi",
-    description: "An AI-powered career guidance platform that offers resume reviews, job insights, and personalized recommendations.",
-    longDescription: "Sarathi is an intelligent career assistant designed to guide students and professionals in making smarter career decisions. Built using React, Flask, and LLM APIs, it provides resume analysis, skill-based suggestions, and personalized job insights. With a sleek, user-friendly UI, Sarathi ensures accessible and reliable career support.",
+    description: "An emotion aware chatbot inspired by Bhagavad Gita, offering personalized life or career guidance.",
+  longDescription: "Sarathi is an AI chatbot inspired by Lord Krishna's wisdom in the Bhagavad Gita. It adapts emotionally to user queries—providing guidance, motivation, or advice with deep contextual understanding. Built with NLP, sentiment analysis, LLMs, and a calm, intuitive UI, Sarathi helps users reflect and find direction grounded in ancient philosophical insights.",
     technologies: ["React", "Flask", "LLM", "Python", "Tailwind CSS"],
     image: "images/Sarathi.png",
     githubUrl: "https://github.com/Vrajesh-Sharma/Sarathi",
