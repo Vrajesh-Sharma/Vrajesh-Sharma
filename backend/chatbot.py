@@ -74,7 +74,7 @@ class ContactRequest(BaseModel):
 
 def create_embeddings(text: str) -> List[float]:
     """Create embeddings using Google's Gemini model."""
-    model = "models/embedding-001"
+    model = "models/embedding-004"
     try:
         embedding = genai.embed_content(
             model=model,
@@ -179,7 +179,7 @@ Vrajesh:
 
 def generate_response(prompt: str) -> str:
     """Generate a response using Google's Gemini model."""
-    model = genai.GenerativeModel('gemini-1.5-flash')
+    model = genai.GenerativeModel('gemini-2.5-flash')
     
     try:
         response = model.generate_content(prompt)
