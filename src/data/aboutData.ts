@@ -1,3 +1,15 @@
+export interface Achievement {
+  id: string;
+  title: string;
+  role: string;
+  organization: string;
+  period: string;
+  description: string;
+  images: string[]; // Array of image paths
+  stats: { label: string; value: string }[];
+  skills: string[];
+}
+
 export interface AboutData {
   name: string;
   title: string;
@@ -10,10 +22,7 @@ export interface AboutData {
     description: string;
   }[];
   interests: string[];
-  quote: {
-    text: string;
-    author: string;
-  };
+  achievements: Achievement[]; // Added this
 }
 
 const aboutData: AboutData = {
@@ -53,10 +62,63 @@ const aboutData: AboutData = {
     "Bike Riding",
     "Guitarist"
   ],
-  quote: {
-    text: "Code is like humor. When you have to explain it, it's bad.",
-    author: "Cory House"
-  }
+  achievements: [
+    {
+      id: "ml-head",
+      title: "Machine Learning Head",
+      role: "Lead & Mentor",
+      organization: "ASPDC (Adani University)",
+      period: "2023 - Present",
+      description: "Leading the charge in AI research and student development. Designed curriculum and spearheaded major campus hackathons.",
+      // PLACEHOLDER IMAGES - Replace these with your actual file paths
+      images: [
+        "public/images/Sarathi.png",
+      ],
+      stats: [
+        { label: "Students Mentored", value: "80+" },
+        { label: "Workshops", value: "12+" }
+      ],
+      skills: ["Leadership", "Curriculum Design", "Public Speaking"]
+    },
+    {
+      id: "gsa",
+      title: "Google Student Ambassador",
+      role: "Community Lead",
+      organization: "Google Community",
+      period: "2024",
+      description: "Bridging the gap between industry tech and campus culture. Facilitated tech literacy drives and cloud study jams.",
+      images: [
+        "public/images/Sarathi.png",
+        "public/images/Sarathi.png",
+        "public/images/Sarathi.png"
+      ],
+      stats: [
+        { label: "Performance", value: "Top 5%" },
+        { label: "Events", value: "5+" }
+      ],
+      skills: ["Google Cloud", "Community Building", "Management"]
+    },
+    {
+      id: "ml-month",
+      title: "ML in One Month Challenge",
+      role: "Solo Researcher",
+      organization: "Self-Initiated",
+      period: "2023",
+      description: "Intensive deep-dive into Neural Networks. Built and deployed 5 End-to-End ML projects in 30 days.",
+      images: [
+        "public/images/Sarathi.png",
+        "public/images/Sarathi.png",
+        "public/images/LearnFlow.png",
+        "public/images/Sarathi.png",
+        "public/images/Sarathi.png",
+      ],
+      stats: [
+        { label: "Projects Shipped", value: "5" },
+        { label: "Blog Views", value: "1k+" }
+      ],
+      skills: ["TensorFlow", "FastAPI", "Documentation", "Rapid Prototyping"]
+    }
+  ]
 };
 
 export default aboutData;
