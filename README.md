@@ -1,25 +1,92 @@
-# 👋 Hey there, I’m Vrajesh Sharma
-- 👀 I’m interested in exploring the vast world of Data Science, Machine Learning, and AI. I'm particularly focused on applying these technologies to solve real-world problems.
-- 🌱 I’m currently deepening my knowledge in advanced Machine Learning algorithms and working on various Python-based projects.
-- 💞️ I’m looking to collaborate on innovative Data Science and Machine Learning projects, especially those that have the potential to make a significant impact.
-- 📫 How to reach me: Feel free to connect with me on [LinkedIn](https://www.linkedin.com/in/vrajesharma-7-dsa/) or check out my projects on [GitHub](https://github.com/Vrajesh-Sharma).
-- 😄 Pronouns: He/Him
-- ⚡ Fun fact: I love unraveling the mysteries of AI and making complex concepts simple and understandable!
+<div align="center">
 
-![](https://komarev.com/ghpvc/?username=Vrajesh-Sharma&color=blue)
+# Hi there, I'm Vrajesh Sharma 👋
 
-## 🌐 Socials:
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white)](https://www.linkedin.com/in/vrajesharma-7-dsa/) [![X](https://img.shields.io/badge/X-black.svg?logo=X&logoColor=white)](https://x.com/vrajesharma) [![email](https://img.shields.io/badge/Email-D14836?logo=gmail&logoColor=white)](mailto:vrajesh.12042005@gmail.com) 
+[![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Fira+Code&pause=1000&color=36BCF7&center=true&vCenter=true&width=435&lines=AI+%26+ML+Specialist;IEEE+Published+Researcher;Building+Agentic+AI+Systems;Open+Source+Contributor)](https://git.io/typing-svg)
 
-# 💻 Tech Stack:
-![C](https://img.shields.io/badge/c-%2300599C.svg?style=for-the-badge&logo=c&logoColor=white) ![C#](https://img.shields.io/badge/c%23-%23239120.svg?style=for-the-badge&logo=csharp&logoColor=white) ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E) ![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54) ![TypeScript](https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white) ![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB) ![Flask](https://img.shields.io/badge/flask-%23000.svg?style=for-the-badge&logo=flask&logoColor=white) ![TensorFlow](https://img.shields.io/badge/TensorFlow-%23FF6F00.svg?style=for-the-badge&logo=TensorFlow&logoColor=white) ![Pandas](https://img.shields.io/badge/pandas-%23150458.svg?style=for-the-badge&logo=pandas&logoColor=white) ![Git](https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white) ![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)
-# 📊 GitHub Stats:
-![](https://github-readme-stats.vercel.app/api?username=Vrajesh-Sharma&theme=dark&hide_border=false&include_all_commits=true&count_private=false)<br/>
-![](https://github-readme-streak-stats.herokuapp.com/?user=Vrajesh-Sharma&theme=dark&hide_border=false)<br/>
-![](https://github-readme-stats.vercel.app/api/top-langs/?username=Vrajesh-Sharma&theme=dark&hide_border=false&include_all_commits=true&count_private=false&layout=compact)
+<div align="center">
+<img src="https://komarev.com/ghpvc/?username=Vrajesh-Sharma&label=Profile%20Views&color=blue&style=flat" alt="Profile Views" />
+</div>
 
-## 🏆 GitHub Trophies
-![](https://github-profile-trophy.vercel.app/?username=Vrajesh-Sharma&theme=radical&no-frame=false&no-bg=true&margin-w=4)
+<a href="https://linkedin.com/in/vrajesharma-7-dsa">
+  <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" />
+</a>
+<a href="https://vrajesharma.vercel.app">
+  <img src="https://img.shields.io/badge/Portfolio-000000?style=for-the-badge&logo=vercel&logoColor=white" alt="Portfolio" />
+</a>
+<a href="mailto:vrajesh.12042005@gmail.com">
+  <img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" />
+</a>
+<a href="https://github.com/Vrajesh-Sharma">
+  <img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" />
+</a>
+<a href="https://www.kaggle.com/vrajesh0sharma7">
+  <img src="https://img.shields.io/badge/Kaggle-035a7d?style=for-the-badge&logo=kaggle&logoColor=white" alt="Kaggle" />
+</a>
+</div>
 
-### 🔝 Top Contributed Repo
-![](https://github-contributor-stats.vercel.app/api?username=Vrajesh-Sharma&limit=5&theme=dark&combine_all_yearly_contributions=true)
+---
+
+### 👨‍💻 About Me
+
+I am a **Pre-final year Computer Science student** specializing in **Artificial Intelligence and Machine Learning**. I am passionate about building **end-to-end ML workflows**, **RAG systems**, and **Agentic AI**.
+
+* 🔭 **Current Role:** Leading ML initiatives as the **Student Head of Machine Learning at ASPDC**.
+* 🎓 **Education:** B.Tech in Computer Science Engineering (AI & ML) at **Adani University** with a **CGPA of 7.95**.
+* 📄 **Research:** Published the paper *"[Empowering Text Classification with Agentic AI: A Systematic Review](https://ieeexplore.ieee.org/abstract/document/11203695)"* in **IEEE Xplore**.
+* 🏆 **Achievements:** Finalist at **Tic-Tac-Toe 24** and **Top 300 in Amazon ML Challenge 24**.
+
+---
+
+### 🛠️ Tech Stack
+
+<div align="center">
+
+| **Category** | **Technologies** |
+| :--- | :--- |
+| **Languages** | <a href="https://skillicons.dev"><img src="https://skillicons.dev/icons?i=python,c,cpp,html" /></a> |
+| **AI / ML** | <a href="https://skillicons.dev"><img src="https://skillicons.dev/icons?i=tensorflow,sklearn,pandas,numpy" /></a> <br/> ![LangChain](https://img.shields.io/badge/LangChain-1C3C3C?style=flat&logo=langchain&logoColor=white) ![CrewAI](https://img.shields.io/badge/CrewAI-Orange?style=flat) ![RAG](https://img.shields.io/badge/RAG-Blue?style=flat) |
+| **Web Dev** | <a href="https://skillicons.dev"><img src="https://skillicons.dev/icons?i=flask,fastapi,react,ts,bootstrap" /></a> |
+| **Databases** | <a href="https://skillicons.dev"><img src="https://skillicons.dev/icons?i=mysql,postgres,supabase" /></a> <br/> ![Pinecone](https://img.shields.io/badge/Pinecone-000000?style=flat&logo=pinecone&logoColor=white) ![ChromaDB](https://img.shields.io/badge/ChromaDB-CC2929?style=flat) |
+| **Tools** | <a href="https://skillicons.dev"><img src="https://skillicons.dev/icons?i=git,github,vscode,vercel" /></a> <br/> ![Render](https://img.shields.io/badge/Render-46E3B7?style=flat&logo=render&logoColor=white) ![n8n](https://img.shields.io/badge/n8n-EA4B71?style=flat&logo=n8n&logoColor=white) |
+
+</div>
+
+---
+
+### 📊 GitHub Stats
+
+<div align="center">
+<a href="https://github.com/Vrajesh-Sharma">
+  <img src="https://streak-stats.demolab.com?user=Vrajesh-Sharma&theme=radical&hide_border=true&border_radius=5" alt="GitHub Streak" />
+</a>
+</div>
+
+---
+
+### 💻 Featured Projects
+
+| Project | Tech Stack | Description |
+| :--- | :--- | :--- |
+| **LekhAI** | `Flask` `Gemini` `DuckDuckGo` | A multi-agent AI writing assistant with specialized agents (Researcher, Strategist, Writer and Editor) for long-form blogs. |
+| **Sarathi** | `React` `TypeScript` `Flask` | AI-powered RAG app for spiritual queries using vector search and scripture knowledge grounding. |
+| **LearnFlow** | `Flask` `Pinecone` `Gemini` | AI Roadmap and Quiz Generator with a RAG Chatbot for doubt solving and Video Summarizer. |
+| **Swabhav** | `TensorFlow` `Scikit-learn` | Neural Network powered web app to classify 16 MBTI personality types with real-time inference. |
+
+---
+
+### 💼 Experience
+
+* **Machine Learning Head** @ [ASPDC](https://aspdc.vercel.app) (Aug 2025 - Present)
+    * Leading a team of 5 ML Leads to design and deliver ML initiatives.
+    * Organized "ML in One Month" to teach Machine Learning from Data Collection to Model Deployment, had a chance to teach 80+ consistent students.
+
+* **Machine Learning Lead** @ [ASPDC](https://aspdc.vercel.app) (Aug 2024 - Aug 2025)
+    * Mentored peers on core ML concepts, model debugging, and evaluation metrics.
+
+---
+
+<br>
+<div align="center">
+    <p><i>Let's connect and build something amazing together!</i></p>
+</div>
