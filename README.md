@@ -6,6 +6,7 @@
 - 😄 Pronouns: He/Him
 - ⚡ Fun fact: I love unraveling the mysteries of AI and making complex concepts simple and understandable!
 
+![](https://komarev.com/ghpvc/?username=Vrajesh-Sharma&color=blue)
 
 ## 🌐 Socials:
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white)](https://www.linkedin.com/in/vrajesharma-7-dsa/) [![X](https://img.shields.io/badge/X-black.svg?logo=X&logoColor=white)](https://x.com/vrajesharma) [![email](https://img.shields.io/badge/Email-D14836?logo=gmail&logoColor=white)](mailto:vrajesh.12042005@gmail.com) 
