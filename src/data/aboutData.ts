@@ -22,6 +22,10 @@ export interface AboutData {
     description: string;
   }[];
   interests: string[];
+  quote: {
+    text: string;
+    author: string;
+  };
   achievements: Achievement[]; // Added this
 }
 
@@ -63,62 +67,84 @@ const aboutData: AboutData = {
     "Guitarist"
   ],
   achievements: [
-    {
-      id: "ml-head",
-      title: "Machine Learning Head",
-      role: "Lead & Mentor",
-      organization: "ASPDC (Adani University)",
-      period: "2023 - Present",
-      description: "Leading the charge in AI research and student development. Designed curriculum and spearheaded major campus hackathons.",
-      // PLACEHOLDER IMAGES - Replace these with your actual file paths
-      images: [
-        "public/images/Sarathi.png",
-      ],
-      stats: [
-        { label: "Students Mentored", value: "80+" },
-        { label: "Workshops", value: "12+" }
-      ],
-      skills: ["Leadership", "Curriculum Design", "Public Speaking"]
-    },
-    {
-      id: "gsa",
-      title: "Google Student Ambassador",
-      role: "Community Lead",
-      organization: "Google Community",
-      period: "2024",
-      description: "Bridging the gap between industry tech and campus culture. Facilitated tech literacy drives and cloud study jams.",
-      images: [
-        "public/images/Sarathi.png",
-        "public/images/Sarathi.png",
-        "public/images/Sarathi.png"
-      ],
-      stats: [
-        { label: "Performance", value: "Top 5%" },
-        { label: "Events", value: "5+" }
-      ],
-      skills: ["Google Cloud", "Community Building", "Management"]
-    },
-    {
-      id: "ml-month",
-      title: "ML in One Month Challenge",
-      role: "Solo Researcher",
-      organization: "Self-Initiated",
-      period: "2023",
-      description: "Intensive deep-dive into Neural Networks. Built and deployed 5 End-to-End ML projects in 30 days.",
-      images: [
-        "public/images/Sarathi.png",
-        "public/images/Sarathi.png",
-        "public/images/LearnFlow.png",
-        "public/images/Sarathi.png",
-        "public/images/Sarathi.png",
-      ],
-      stats: [
-        { label: "Projects Shipped", value: "5" },
-        { label: "Blog Views", value: "1k+" }
-      ],
-      skills: ["TensorFlow", "FastAPI", "Documentation", "Rapid Prototyping"]
-    }
-  ]
+  {
+    id: "research-paper",
+    title: "Research Paper Author",
+    role: "First Author",
+    organization: "Academic Research",
+    period: "16th August 2025",
+    description:
+      "Authored and published a research paper titled 'Empowering Text Classification with Agentic AI: A Systematic Review', focusing on applying Agentic AI workflows for text classification techniques.",
+    images: [
+      "/images/paper1.png",
+      "/images/paper3.png",
+      "/images/paper4.png",
+    ],
+    stats: [
+      { label: "Domain", value: "Agentic AI" },
+      { label: "Field", value: "Classification" }
+    ],
+    skills: ["Agentic AI", "NLP", "Research Writing", "Literature Review"]
+  },
+  {
+    id: "ml-head",
+    title: "Machine Learning Head",
+    role: "Lead & Mentor",
+    organization: "ASPDC (Adani University)",
+    period: "August 2025 - Present",
+    description:
+      "Leading 'ML in One Month', a structured hands-on program covering core ML concepts, practical implementations, and real-world use cases for students across departments.",
+    images: [
+      "/images/ML_stage.JPG",
+      "/images/ML_Reward.JPG",
+      "/images/ML_StageCertificate.JPG",
+      "/images/ML1.JPG",
+    ],
+    stats: [
+      { label: "Students Trained", value: "100+" },
+      { label: "Duration", value: "4 Sessions" }
+    ],
+    skills: ["Leadership", "Curriculum Design", "Teaching", "Mentorship", "Machine Learning"]
+  },
+  {
+    id: "ml101",
+    title: "ML Lead",
+    role: "Instructor",
+    organization: "ASPDC (Adani University)",
+    period: "August 2024 - August 2025",
+    description:
+      "Conducted ML101 sessions with a strong focus on Linear Regression, covering data exploration, mathematical intuition, model training, and real-world interpretation.",
+    images: [
+      "/images/ML101.jpeg",
+    ],
+    stats: [
+      { label: "Core Topic", value: "Linear Regression" },
+      { label: "Sessions", value: "Hands-on" }
+    ],
+    skills: ["Linear Regression", "Teaching", "Data Analysis", "Model Evaluation"]
+  },
+  // {
+  //   id: "hackathon",
+  //   title: "Hackathon Experience",
+  //   role: "AI/ML Developer",
+  //   organization: "Multiple National Hackathons",
+  //   period: "2024",
+  //   description:
+  //     "Participated in national-level hackathons including DotSlash 8.0 (ACM SVNIT). Built AI-powered solutions under tight deadlines, collaborating in cross-functional teams.",
+  //   images: [
+  //     "public/images/hackathon.png",
+  //   ],
+  //   stats: [
+  //     { label: "Hackathons", value: "3+" },
+  //     { label: "Final Rounds", value: "Yes" }
+  //   ],
+  //   skills: ["Problem Solving", "Rapid Prototyping", "Team Collaboration", "Applied AI"]
+  // }
+],
+  quote: {
+    text: "Code is like humor. When you have to explain it, it's bad.",
+    author: "Cory House"
+  }
 };
 
 export default aboutData;
