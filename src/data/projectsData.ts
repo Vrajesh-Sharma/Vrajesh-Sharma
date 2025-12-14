@@ -22,7 +22,7 @@ const projectsData: Project[] = [
     image: "images/LekhAI.png",
     githubUrl: "https://github.com/Vrajesh-Sharma/Blog-Agent",
     liveUrl: "https://lekhai.onrender.com",
-    featured: false,
+    featured: true,
     category: "AI Agents",
     year: 2025
   },
@@ -35,7 +35,7 @@ const projectsData: Project[] = [
     image: "images/Sarathi.png",
     githubUrl: "https://github.com/Vrajesh-Sharma/Sarathi",
     liveUrl: "https://sarathi-krishna.vercel.app",
-    featured: false,
+    featured: true,
     category: "AI Assistant",
     year: 2025
   },
