@@ -65,9 +65,7 @@ const Skills = () => {
                   <SkillItem 
                     key={skill.name} 
                     name={skill.name}
-                    proficiency={skill.proficiency}
-                    icon={skill.icon}
-                    color={skill.color}
+                    level={skill.level}
                   />
                 ))}
               </div>

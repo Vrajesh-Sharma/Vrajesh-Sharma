@@ -15,7 +15,17 @@ const Home = () => {
   const featuredProjects = projectsData.filter(project => project.featured).slice(0, 2);
   const featuredBlogPosts = blogData.filter(post => post.featured).slice(0, 2);
   // Get top skills (highest proficiency)
-  const topSkills = [...skillsData].sort((a, b) => b.proficiency - a.proficiency).slice(0, 4);
+  // Priority order for levels
+  const levelPriority = {
+    Advanced: 3,
+    Applied: 2,
+    Core: 1
+  };
+
+  // Get top skills based on level priority
+  const topSkills = [...skillsData]
+    .sort((a, b) => levelPriority[b.level] - levelPriority[a.level])
+    .slice(0, 4);
 
   return (
     <>
@@ -97,9 +107,7 @@ const Home = () => {
                 <SkillItem 
                   key={skill.name} 
                   name={skill.name}
-                  proficiency={skill.proficiency}
-                  icon={skill.icon}
-                  color={skill.color}
+                  level={skill.level}
                 />
               ))}
             </div>
