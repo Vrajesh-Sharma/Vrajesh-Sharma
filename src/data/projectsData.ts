@@ -14,6 +14,19 @@ export interface Project {
 
 const projectsData: Project[] = [
   {
+    id: "project-8",
+    title: "LekhAI",
+    description: "A multi-agent system that researchs the live web, outlines, writes, and edits high-quality technical blog posts in real-time.",
+    longDescription: "Sarathi is an AI chatbot inspired by Lord Krishna's wisdom in the Bhagavad Gita. It adapts emotionally to user queries—providing guidance, motivation, or advice with deep contextual understanding. Built with NLP, sentiment analysis, LLMs, and a calm, intuitive UI, Sarathi helps users reflect and find direction grounded in ancient philosophical insights.",
+    technologies: ["Flask", "LLM", "Python", "DuckDuckGo"],
+    image: "images/LekhAI.png",
+    githubUrl: "https://github.com/Vrajesh-Sharma/Blog-Agent",
+    liveUrl: "https://lekhai.onrender.com",
+    featured: false,
+    category: "AI Agents",
+    year: 2025
+  },
+  {
     id: "project-7",
     title: "Sarathi",
     description: "An emotion aware chatbot inspired by Bhagavad Gita, offering personalized life or career guidance.",
