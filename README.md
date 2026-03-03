@@ -46,7 +46,7 @@ I am a **Pre-final year Computer Science student** specializing in **Artificial 
 | :--- | :--- |
 | **Languages** | <a href="https://skillicons.dev"><img src="https://skillicons.dev/icons?i=python,c,cpp,html" /></a> |
 | **AI / ML** | <a href="https://skillicons.dev"><img src="https://skillicons.dev/icons?i=tensorflow,sklearn,pandas,numpy" /></a> <br/> ![LangChain](https://img.shields.io/badge/LangChain-1C3C3C?style=flat&logo=langchain&logoColor=white) ![CrewAI](https://img.shields.io/badge/CrewAI-Orange?style=flat) ![RAG](https://img.shields.io/badge/RAG-Blue?style=flat) |
-| **Web Dev** | <a href="https://skillicons.dev"><img src="https://skillicons.dev/icons?i=flask,fastapi,react,ts,bootstrap" /></a> |
+| **Web Dev** | <a href="https://skillicons.dev"><img src="https://skillicons.dev/icons?i=flask,fastapi,react,js,bootstrap" /></a> |
 | **Databases** | <a href="https://skillicons.dev"><img src="https://skillicons.dev/icons?i=mysql,postgres,supabase" /></a> <br/> ![Pinecone](https://img.shields.io/badge/Pinecone-000000?style=flat&logo=pinecone&logoColor=white) ![ChromaDB](https://img.shields.io/badge/ChromaDB-CC2929?style=flat) |
 | **Tools** | <a href="https://skillicons.dev"><img src="https://skillicons.dev/icons?i=git,github,vscode,vercel" /></a> <br/> ![Render](https://img.shields.io/badge/Render-46E3B7?style=flat&logo=render&logoColor=white) ![n8n](https://img.shields.io/badge/n8n-EA4B71?style=flat&logo=n8n&logoColor=white) |
 
