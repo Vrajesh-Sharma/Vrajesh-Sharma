@@ -557,7 +557,7 @@ def create_embeddings(text: str) -> List[float]:
     """Create embeddings using Google's Gemini Embedding model (new SDK)."""
     try:
         result = client.models.embed_content(
-            model="gemini-embedding-001",                       ################################
+            model="gemini-embedding-001",                       #Embeddings
             contents=text,
             config=types.EmbedContentConfig(task_type="RETRIEVAL_QUERY")
         )
