@@ -32,7 +32,7 @@
 I am a **Pre-final year Computer Science student** specializing in **Artificial Intelligence and Machine Learning**. I am passionate about building **end-to-end ML workflows**, **RAG systems**, and **Agentic AI**.
 
 * 🔭 **Current Role:** Leading ML initiatives as the **Student Head of Machine Learning at ASPDC**.
-* 🎓 **Education:** B.Tech in Computer Science Engineering (AI & ML) at **Adani University** with a **CGPA of 7.95**.
+* 🎓 **Education:** B.Tech in Computer Science Engineering (AI & ML) at **Adani University** with a **CGPA of 8.05**.
 * 📄 **Research:** Published the paper *"[Empowering Text Classification with Agentic AI: A Systematic Review](https://ieeexplore.ieee.org/abstract/document/11203695)"* in **IEEE Xplore**.
 * 🏆 **Achievements:** Finalist at **Tic-Tac-Toe 24** and **Top 300 in Amazon ML Challenge 24**.
 
