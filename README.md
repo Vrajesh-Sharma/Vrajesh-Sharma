@@ -2,7 +2,7 @@
 
 # Hi there, I'm Vrajesh Sharma 👋
 
-[![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Fira+Code&pause=1000&color=36BCF7&center=true&vCenter=true&width=435&lines=AI+%26+ML+Specialist;IEEE+Published+Researcher;Building+Agentic+AI+Systems;Open+Source+Contributor)](https://git.io/typing-svg)
+[![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Fira+Code&pause=1000&color=36BCF7&center=true&vCenter=true&width=435&lines=IIT+Patna+Research+Intern;AI+%26+ML+Specialist;IEEE+Published+Researcher;Building+Agentic+AI+Systems;Open+Source+Contributor)](https://git.io/typing-svg)
 
 <div align="center">
 <img src="https://komarev.com/ghpvc/?username=Vrajesh-Sharma&label=Profile%20Views&color=blue&style=flat" alt="Profile Views" />
@@ -28,13 +28,16 @@
 ---
 
 ### 👨‍💻 About Me
+IEEE-published researcher and **Pre-final year B.Tech (AI & ML) student**, currently interning at **IIT Patna** on medical signal digitization. Skilled in end-to-end deep learning pipelines, LLM-based multi-agent systems, and RAG architectures, with deployed projects. **Machine Learning Head at ASPDC**, with experience teaching **150+** students across ML and DL programs.
+<!-- I am a **Pre-final year Computer Science student** specializing in **Artificial Intelligence and Machine Learning**. I am passionate about building **end-to-end ML workflows**, **RAG systems**, and **Agentic AI**. -->
 
-I am a **Pre-final year Computer Science student** specializing in **Artificial Intelligence and Machine Learning**. I am passionate about building **end-to-end ML workflows**, **RAG systems**, and **Agentic AI**.
-
-* 🔭 **Current Role:** Leading ML initiatives as the **Student Head of Machine Learning at ASPDC**.
-* 🎓 **Education:** B.Tech in Computer Science Engineering (AI & ML) at **Adani University** with a **CGPA of 8.05**.
+* 🔭 **Current Role:** **Reserch Intern at IIT Patna** and Leading ML initiatives as the **Student Head of Machine Learning at ASPDC**.
+* 🎓 **Education:** B.Tech in Computer Science Engineering (AI & ML) at **Adani University** with a **CGPA of 8.24**.
 * 📄 **Research:** Published the paper *"[Empowering Text Classification with Agentic AI: A Systematic Review](https://ieeexplore.ieee.org/abstract/document/11203695)"* in **IEEE Xplore**.
-* 🏆 **Achievements:** Finalist at **Tic-Tac-Toe 24** and **Top 300 in Amazon ML Challenge 24**.
+* 🏆 **Achievements:** 
+  * Winner at **Build with AI**
+  * Finalist at **Tic-Tac-Toe 24**
+  * **Top 300 in Amazon ML Challenge 24**
 
 ---
 
@@ -76,7 +79,8 @@ I am a **Pre-final year Computer Science student** specializing in **Artificial 
 ---
 
 ### 💼 Experience
-
+* **Research Intern at IIT Patna** (May 2026 - Present)
+    * Developing medical graph digitization pipelines at IIT Patna to extract structured numerical data from clinical signal images, contributing to research in healthcare AI
 * **Machine Learning Head** @ [ASPDC](https://aspdc.vercel.app) (Aug 2025 - Present)
     * Leading a team of 5 ML Leads to design and deliver ML initiatives.
     * Organized "ML in One Month" to teach Machine Learning from Data Collection to Model Deployment, had a chance to teach 80+ consistent students.
