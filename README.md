@@ -166,11 +166,11 @@ Final year B.Tech (AI & ML) student at Adani University (CGPA 8.24), graduating 
 
   Designed a CTG digitization pipeline extracting fetal heart rate waveforms from clinical monitor images via pixel-calibration, improved robustness to glare, reflections, and incomplete grid structures. Engineered physiological features and benchmarked ML and DL for fetal state classification.
 
-- **Machine Learning Head**, ASPDC · *`Aug 2025 – Aug 2026`*
+- **Machine Learning Head**, [ASPDC](https://aspdc.vercel.app) · *`Aug 2025 – Aug 2026`*
 
   Led a team of 5 ML Leads to design and deliver ML initiatives, taught **150+ students** across "ML in One Month" and "DL in One Month" covering full pipelines from data collection through ANN/CNN/RNN/LSTM to deployment.
 
-- **Machine Learning Lead**, ASPDC · *`Aug 2024 – Aug 2025`*
+- **Machine Learning Lead**, [ASPDC](https://aspdc.vercel.app) · *`Aug 2024 – Aug 2025`*
 
   Ran ML-101 workshops introducing linear regression and supervised learning fundamentals.
 
