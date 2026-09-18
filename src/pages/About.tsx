@@ -254,7 +254,7 @@ const About = () => {
               
               <div className="relative w-full md:w-1/2 max-w-xs aspect-[3/3.5] overflow-hidden rounded-xl shadow-2xl group">
                 <img 
-                  src="/images/Vrajesh.jpg" 
+                  src="/images/VrajeshCloseUp.jpg" 
                   alt={aboutData.name} 
                   className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                 />

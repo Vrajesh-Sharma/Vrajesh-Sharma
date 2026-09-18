@@ -64,10 +64,10 @@ const skillsData: Skill[] = [
   { name: "Hyperparameter Tuning", category: "Machine Learning & AI", level: "Applied", color: "#6B7280" },
 
   // Deep Learning & GenAI
-  { name: "Neural Networks", category: "Deep Learning & GenAI", level: "Applied", color: "#9333EA" },
-  { name: "LLMs", category: "Deep Learning & GenAI", level: "Advanced", color: "#9333EA" },
+  { name: "Neural Networks", category: "Deep Learning & GenAI", level: "Advanced", color: "#9333EA" },
+  { name: "LLMs", category: "Deep Learning & GenAI", level: "Applied", color: "#9333EA" },
   { name: "RAG", category: "Deep Learning & GenAI", level: "Advanced", color: "#9333EA" },
-  { name: "Agentic AI", category: "Deep Learning & GenAI", level: "Advanced", color: "#9333EA" },
+  { name: "Agentic AI", category: "Deep Learning & GenAI", level: "Applied", color: "#9333EA" },
   { name: "Prompt Engineering", category: "Deep Learning & GenAI", level: "Advanced", color: "#9333EA" },
 
   // Backend
@@ -87,7 +87,10 @@ const skillsData: Skill[] = [
   { name: "Vercel", category: "Tools & Platforms", level: "Applied", color: "#000000" },
   { name: "Render", category: "Tools & Platforms", level: "Applied", color: "#0466C8" },
   { name: "VS Code", category: "Tools & Platforms", level: "Advanced", color: "#007ACC" },
-  { name: "n8n", category: "Tools & Platforms", level: "Applied", color: "#FF6A00" }
+  { name: "n8n", category: "Tools & Platforms", level: "Applied", color: "#FF6A00" },
+  { name: "Qualcomm AI Hub", category: "Tools & Platforms", level: "Applied", color: "#FF6A00" },
+  { name: "Antigravity", category: "Tools & Platforms", level: "Applied", color: "#FF6A00" },
+  { name: "Claude Code", category: "Tools & Platforms", level: "Applied", color: "#FF6A00" }
 ];
 
 export default skillsData;

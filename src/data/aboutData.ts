@@ -68,6 +68,27 @@ const aboutData: AboutData = {
   ],
   achievements: [
   {
+    id: "iit-patna-research-internship",
+    title: "Research Internship",
+    role: "Research Intern",
+    organization: "Indian Institute of Technology Patna",
+    period: "22nd May 2026 - 31st July 2026",
+    description:
+      "Developed a CTG signal digitization pipeline using image processing and pixel calibration, followed by feature engineering and machine learning/deep learning models for automated fetal state classification.",
+    images: [
+      "/images/Architecture.jpeg",
+    ],
+    stats: [
+      { label: "Domain", value: "Medical AI" },
+      { label: "Focus", value: "CTG Digitization" },
+    ],
+    skills: [
+      "Medical Image Processing",
+      "Computer Vision",
+      "Signal Processing",
+    ]
+  },
+  {
     id: "research-paper",
     title: "Research Paper Author",
     role: "First Author",

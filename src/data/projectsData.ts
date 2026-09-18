@@ -14,6 +14,28 @@ export interface Project {
 
 const projectsData: Project[] = [
   {
+    id: "project-9",
+    title: "Tumour Lens",
+    description:
+      "An on-device medical AI system that performs brain tumor segmentation from MRI scans using Attention U-Net and Qualcomm Snapdragon NPU acceleration.",
+    longDescription:
+      "TumourLens is an offline medical AI application built for brain tumor segmentation on mobile devices. It uses a Spatio-Temporal Attention U-Net trained on the BraTS2020 dataset, optimized through ONNX and Qualcomm AI Hub, and deployed using TFLite on Snapdragon hardware. The React Native application provides real-time tumor overlays, scan history, local patient records, and PDF diagnostic reports without requiring cloud inference.",
+    technologies: [
+      "PyTorch",
+      "Attention U-Net",
+      "Qualcomm AI Hub",
+      "ONNX",
+      "TensorFlow Lite",
+      "FastAPI",
+      "EdgeAI"
+    ],
+    image: "images/U-Net.png",
+    githubUrl: "https://github.com/Vrajesh-Sharma/tumorlens",
+    featured: true,
+    category: "AI Assistant",
+    year: 2026
+  },
+  {
     id: "project-8",
     title: "LekhAI",
     description: "A multi-agent system that researchs the live web, outlines, writes, and edits high-quality technical blog posts in real-time.",
@@ -61,7 +83,7 @@ const projectsData: Project[] = [
     image: "images/LearnFlow.png",
     githubUrl: "https://github.com/Vrajesh-Sharma/LearnFlow",
     featured: true,
-    category: "AI-powered Learning Tool",
+    category: "AI Assistant",
     year: 2025
   },
   {
@@ -87,7 +109,7 @@ const projectsData: Project[] = [
     githubUrl: "https://github.com/Vrajesh-Sharma/GiftGPT",
     liveUrl: "",
     featured: false,
-    category: "AI/ML",
+    category: "AI Assistant",
     year: 2024
   },
   {
@@ -100,7 +122,7 @@ const projectsData: Project[] = [
     githubUrl: "https://github.com/Vrajesh-Sharma/Bicep-Curl-Counter",
     liveUrl: "",
     featured: false,
-    category: "Computer Vision",
+    category: "Web Application",
     year: 2024
   },
   {
