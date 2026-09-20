@@ -1,0 +1,17 @@
+name: Keep HF Space Alive
+
+on:
+  schedule:
+    - cron: "0 6 * * *"   # runs daily at 06:00 UTC (11:30 AM IST)
+  workflow_dispatch: {}     # lets you trigger it manually from the Actions tab
+
+jobs:
+  ping:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Ping /health endpoint
+        run: |
+          curl -sf --retry 3 --retry-delay 10 \
+            "https://vrajesh-sharma.onrender.com/health" \
+            && echo "Ping successful" \
+            || echo "Ping failed"
