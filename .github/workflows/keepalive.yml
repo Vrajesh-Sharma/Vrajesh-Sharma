@@ -2,8 +2,8 @@ name: Keep HF Space Alive
 
 on:
   schedule:
-    - cron: "0 6 * * *"   # runs daily at 06:00 UTC (11:30 AM IST)
-  workflow_dispatch: {}     # lets you trigger it manually from the Actions tab
+    - cron: "22 14 * * *"   # 19:52 IST daily (IST = UTC + 5:30)
+  workflow_dispatch: {}      # lets you trigger it manually from the Actions tab to test
 
 jobs:
   ping:
